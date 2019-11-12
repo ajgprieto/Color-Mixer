@@ -1,7 +1,9 @@
 const express = require('express');
 const seedrandom = require('seedrandom');
+const cors = require('cors');
 
 const app = express();
+app.use(cors());
 const port = process.env.PORT || 8080;
 
 function generateColorsWithSeed(seed) {
