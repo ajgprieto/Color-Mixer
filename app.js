@@ -34,7 +34,7 @@ function getRandomDecimal() {
 }
 
 function getHexValue(r, g, b) {
-  return dec2Hex(r) + dec2Hex(g) + dec2Hex(b);
+  return `#${dec2Hex(r) + dec2Hex(g) + dec2Hex(b)}`;
 }
 
 function dec2Hex(decimal) {
